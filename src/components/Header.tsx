@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { messages } from "../messages";
 import { LangContext } from "@/context/context";
 import Link from "next/link";
 
 export default function Header() {
+  const [isOpen, setOpen] = useState(false);
   const { lang, setCurrentLang } = useContext(LangContext);
 
   const message = messages.header[lang];
@@ -22,48 +23,103 @@ export default function Header() {
             <img src="/assets/linkedin-colored.svg" alt="Linkeding icon" />
           </a>
         </div>
-        <ul className={`flex gap-10`}>
-          <li>
-            <Link href="/" className="underline text-xl">
-              {message.home}
-            </Link>
-          </li>
-          <li>
-            <a href="#about" className="underline text-xl">
-              {message.about}
-            </a>
-          </li>
-          <li>
-            <a href="#services" className="underline text-xl">
-              {message.services}
-            </a>
-          </li>
-          <li>
-            <a href="#projects" className="underline text-xl">
-              {message.projects}
-            </a>
-          </li>
-        </ul>
-        <div>
-          <div className="p-1 bg-white flex ">
-            <button
-              onClick={() => setCurrentLang("en")}
-              className={`w-14 rounded border-black ${
-                lang === "en" && `border`
-              } `}
-            >
-              en
-            </button>
-            <button
-              onClick={() => setCurrentLang("pt")}
-              className={`w-14 rounded border-black ${
-                lang === "pt" && `border`
-              }`}
-            >
-              pt
-            </button>
-          </div>
+        <div
+          className={`${isOpen ? "absolute p-5 top-[44px] left-0 w-full" : ""}`}
+        >
+          <ul
+            className={`md:flex gap-10 ${
+              isOpen
+                ? " border rounded border-black p-5 flex items-center flex-col bg-gray-100 w-full"
+                : "hidden"
+            }`}
+          >
+            <li>
+              <Link
+                href="/"
+                onClick={() => setOpen(false)}
+                className="underline text-xl"
+              >
+                {message.home}
+              </Link>
+            </li>
+            <li>
+              <a
+                href="#about"
+                onClick={() => setOpen(false)}
+                className="underline text-xl"
+              >
+                {message.about}
+              </a>
+            </li>
+            <li>
+              <a
+                href="#services"
+                onClick={() => setOpen(false)}
+                className="underline text-xl"
+              >
+                {message.services}
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                onClick={() => setOpen(false)}
+                className="underline text-xl"
+              >
+                {message.projects}
+              </a>
+            </li>
+            <li>
+              <div className="p-1 bg-white rounded md:hidde flex">
+                <button
+                  onClick={() => setCurrentLang("en")}
+                  className={`w-14 rounded border-black ${
+                    lang === "en" && `border`
+                  } `}
+                >
+                  en
+                </button>
+                <button
+                  onClick={() => setCurrentLang("pt")}
+                  className={`w-14 rounded border-black ${
+                    lang === "pt" && `border`
+                  }`}
+                >
+                  pt
+                </button>
+              </div>
+            </li>
+          </ul>
         </div>
+
+        <div className="p-1 bg-white rounded md:flex hidden">
+          <button
+            onClick={() => setCurrentLang("en")}
+            className={`w-14 rounded border-black ${
+              lang === "en" && `border`
+            } `}
+          >
+            en
+          </button>
+          <button
+            onClick={() => setCurrentLang("pt")}
+            className={`w-14 rounded border-black ${lang === "pt" && `border`}`}
+          >
+            pt
+          </button>
+        </div>
+
+        <button className="md:hidden" onClick={() => setOpen(!isOpen)}>
+          {isOpen ? (
+            <img src="/assets/close.svg" alt="Close menu" className="w-7 h-7" />
+          ) : (
+            <img
+              src="/assets/menu.svg"
+              alt="Hamburger menu"
+              className="w-7 h-7"
+            />
+          )}
+        </button>
       </nav>
     </header>
   );
