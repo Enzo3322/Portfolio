@@ -83,5 +83,12 @@
 .colored {
   background: linear-gradient(to left, #1400ff, #a300cb);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: #000;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
 }

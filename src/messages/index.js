@@ -27,15 +27,25 @@ export const messages = {
     en: {
       title: "About me",
       content: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a leo posuere, semper felis eget, consectetur lectus. Cras sed velit sed eros mattis placerat. Sed sagittis risus id molestie aliquam. Fusce eu purus interdum, egestas eros eu, porta neque. Cras ac auctor erat. Cras condimentum commodo felis, sed rutrum ex cursus non. Aliquam euismod sit amet diam et fermentum. Integer eleifend ipsum a arcu placerat, quis tempor ante posuere. Curabitur et porta lacus. Praesent vel tempor odio.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a leo posuere, semper felis eget, consectetur lectus. Cras sed velit sed eros mattis placerat. Sed sagittis risus id molestie aliquam. Fusce eu purus interdum, egestas eros eu, porta neque. Cras ac auctor erat. Cras condimentum commodo felis, sed rutrum ex cursus non. Aliquam euismod sit amet diam et fermentum. Integer eleifend ipsum a arcu placerat, quis tempor ante posuere. Curabitur et porta lacus. Praesent vel tempor odio.",
+        "Hello! I'm Enzo, a seasoned Senior Full-Stack Developer with a passion for architecting robust solutions and mentoring the next generation of developers.",
+        "With a wealth of experience in designing high-level architectures and choosing the right technologies and frameworks, I excel in building scalable and efficient web applications from the ground up.",
+        "I thrive on collaboration and am known for my ability to mentor junior developers, provide constructive feedback, and foster a culture of continuous learning and growth within teams.",
+        "My expertise spans across the entire stack, from front-end to back-end, and includes code review, feature development, bug fixing, and performance optimization.",
+        "I'm committed to staying ahead of the curve by keeping up with the latest trends and technologies in web development, and I take pride in continuously refining my skills to deliver top-notch solutions.",
+        "Currently seeking opportunities to contribute my technical leadership and expertise in a dynamic and innovative environment where I can make a meaningful impact.",
+        "Let's connect and explore how we can collaborate to build extraordinary digital experiences!",
       ],
     },
     pt: {
       title: "Sobre mim",
       content: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a leo posuere, semper felis eget, consectetur lectus. Cras sed velit sed eros mattis placerat. Sed sagittis risus id molestie aliquam. Fusce eu purus interdum, egestas eros eu, porta neque. Cras ac auctor erat. Cras condimentum commodo felis, sed rutrum ex cursus non. Aliquam euismod sit amet diam et fermentum. Integer eleifend ipsum a arcu placerat, quis tempor ante posuere. Curabitur et porta lacus. Praesent vel tempor odio.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a leo posuere, semper felis eget, consectetur lectus. Cras sed velit sed eros mattis placerat. Sed sagittis risus id molestie aliquam. Fusce eu purus interdum, egestas eros eu, porta neque. Cras ac auctor erat. Cras condimentum commodo felis, sed rutrum ex cursus non. Aliquam euismod sit amet diam et fermentum. Integer eleifend ipsum a arcu placerat, quis tempor ante posuere. Curabitur et porta lacus. Praesent vel tempor odio.",
+        "Olá! Eu sou Enzo, um experiente Desenvolvedor Full-Stack Sênior com paixão por arquitetar soluções robustas e orientar a próxima geração de desenvolvedores.",
+        "Com vasta experiência em projetar arquiteturas de alto nível e escolher as tecnologias e frameworks certos, eu me destaco na construção de aplicativos web escaláveis e eficientes do zero.",
+        "Eu prospero na colaboração e sou conhecido por minha capacidade de orientar desenvolvedores juniores, fornecer feedback construtivo e fomentar uma cultura de aprendizado e crescimento contínuos dentro das equipes.",
+        "Minha experiência abrange toda a pilha, do front-end ao back-end, e inclui revisão de código, desenvolvimento de recursos, correção de bugs e otimização de desempenho.",
+        "Estou comprometido em me manter à frente da curva, acompanhando as últimas tendências e tecnologias em desenvolvimento web, e me orgulho de refinar continuamente minhas habilidades para entregar soluções de alta qualidade.",
+        "Atualmente, estou em busca de oportunidades para contribuir com minha liderança técnica e experiência em um ambiente dinâmico e inovador, onde posso causar um impacto significativo.",
+        "Vamos nos conectar e explorar como podemos colaborar para construir experiências digitais extraordinárias!",
       ],
     },
   },
@@ -46,17 +56,17 @@ export const messages = {
         web: {
           title: "Web Development",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a leo posuere, semper felis eget, consectetur lectu",
+            "Developing scalable and efficient web applications from the ground up using the latest technologies and frameworks.",
         },
         api: {
           title: "API Development",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a leo posuere, semper felis eget, consectetur lectu",
+            "Designing and developing robust and secure APIs to power web and mobile applications, and integrate with third-party services.",
         },
         ux: {
           title: "UX/UI Design",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a leo posuere, semper felis eget, consectetur lectu",
+            "Creating intuitive and visually appealing user interfaces and experiences to deliver exceptional digital products.",
         },
       },
     },
@@ -66,17 +76,17 @@ export const messages = {
         web: {
           title: "Desenvolvimento Web",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a leo posuere, semper felis eget, consectetur lectu",
+            "Desenvolvimento de aplicativos web escaláveis e eficientes do zero, utilizando as tecnologias e frameworks mais recentes.",
         },
         api: {
           title: "Desenvolvimento de API",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a leo posuere, semper felis eget, consectetur lectu",
+            "Projetar e desenvolver APIs robustas e seguras para alimentar aplicativos web e móveis e integrar-se a serviços de terceiros.",
         },
         ux: {
           title: "Design UX/UI",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a leo posuere, semper felis eget, consectetur lectu",
+            "Criação de interfaces e experiências de usuário intuitivas e visualmente atraentes para oferecer produtos digitais excepcionais.",
         },
       },
     },
