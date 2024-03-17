@@ -70,7 +70,7 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <div className="p-1 bg-white rounded md:hidde flex">
+              <div className="p-1 bg-white rounded md:hidden flex">
                 <button
                   onClick={() => setCurrentLang("en")}
                   className={`w-14 rounded border-black ${
