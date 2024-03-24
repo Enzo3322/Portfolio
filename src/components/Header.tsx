@@ -5,13 +5,13 @@ import { LangContext } from "@/context/context";
 import Link from "next/link";
 
 export default function Header() {
-  const [isOpen, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   const { lang, setCurrentLang } = useContext(LangContext);
 
   const message = messages.header[lang];
 
   return (
-    <header className="fixed top-0 w-screen bg-gray-100	">
+    <header className="fixed top-0 w-screen bg-gray-100 z-50	">
       <nav
         className={`max-w-[1180px]  p-5 m-auto flex justify-between items-center`}
       >
@@ -24,11 +24,11 @@ export default function Header() {
           </a>
         </div>
         <div
-          className={`${isOpen ? "absolute p-5 top-[44px] left-0 w-full" : ""}`}
+          className={`${open ? "absolute p-5 top-[44px] left-0 w-full" : ""}`}
         >
           <ul
             className={`md:flex gap-10 ${
-              isOpen
+              open
                 ? " border rounded border-black p-5 flex items-center flex-col bg-gray-100 w-full"
                 : "hidden"
             }`}
@@ -60,13 +60,22 @@ export default function Header() {
                 {message.services}
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="#projects"
                 onClick={() => setOpen(false)}
                 className="underline text-xl"
               >
                 {message.projects}
+              </a>
+            </li> */}
+            <li>
+              <a
+                href="#work"
+                onClick={() => setOpen(false)}
+                className="underline text-xl"
+              >
+                {message.work}
               </a>
             </li>
             <li>
@@ -109,8 +118,8 @@ export default function Header() {
           </button>
         </div>
 
-        <button className="md:hidden" onClick={() => setOpen(!isOpen)}>
-          {isOpen ? (
+        <button className="md:hidden" onClick={() => setOpen(!open)}>
+          {open ? (
             <img src="/assets/close.svg" alt="Close menu" className="w-7 h-7" />
           ) : (
             <img

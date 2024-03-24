@@ -5,22 +5,24 @@ export const messages = {
       about: "About",
       services: "Services",
       projects: "Projects",
+      work: "Work",
     },
     pt: {
       home: "Início",
       about: "Sobre",
       services: "Serviços",
       projects: "Projetos",
+      work: "Experiências",
     },
   },
   hero: {
     en: {
       pretitle: "👋 Hello everyone",
-      title: `I'm Enzo <span class="colored">Spagnolli</span> <br> Senior Full Stack<br> Developer`,
+      title: `I'm Enzo <span class="colored">Spagnolli</span> Senior Full Stack Developer`,
     },
     pt: {
       pretitle: "👋 Olá a todos",
-      title: `Eu sou Enzo <span class="colored">Spagnolli</span> <br> Desenvolvedor Full Stack<br> Sênior`,
+      title: `Eu sou Enzo <span class="colored">Spagnolli</span> Desenvolvedor Full Stack Sênior`,
     },
   },
   about: {
@@ -75,6 +77,7 @@ export const messages = {
       cards: {
         web: {
           title: "Desenvolvimento Web",
+          companyLogo: "company-b-logo.png",
           content:
             "Desenvolvimento de aplicativos web escaláveis e eficientes do zero, utilizando as tecnologias e frameworks mais recentes.",
         },
@@ -97,6 +100,94 @@ export const messages = {
     },
     pt: {
       title: "Projetos",
+    },
+  },
+  work: {
+    en: {
+      title: "Latest Companies",
+      jobs: [
+        {
+          title: "Senior Full-Stack Developer",
+          company: "DBC Company (current)",
+          companyLink: "https://www.dbccompany.com.br/en/homepage/",
+          companyLogo: "/assets/work/dbc-logo.png",
+          date: "Mar 2022 - Present",
+          description: [
+            "- Developing solutions from scratch for VTEX e-commerces",
+            "- Developing and implementing back-office services using Nodejs, Typescript, React and VTEX IO",
+            "- Implementing checkout solutions using Preact, Nodejs and Typescript",
+          ],
+        },
+        {
+          title: "Full-Stack Developer",
+          company: "Corebiz",
+          companyLink: "https://www.corebiz.ag/",
+          companyLogo: "/assets/work/corebiz-logo.png",
+          date: "Ago 2021 - Mar 2022",
+          description: [
+            "- Developed payment solutions using React, Typescript and NodeJs on the VTEX platform.",
+            "- Participated in integrations with external services aimed at creating virtual cards",
+            "- Assisted developers in their development routine delivering solutions through pair programming",
+            "- I participated in the implementation of the VTEX fast-store in the Carrefour group in its market front.",
+            "https://blog.corebiz.ag/quebrando-barreiras-do-checkout-vtex-com-reactjs/",
+          ],
+        },
+        {
+          title: "Front-End Developer",
+          company: "Enext",
+          companyLink: "https://www.enext.com.br/",
+          companyLogo: "/assets/work/enext-logo.png",
+          date: "Mai 2021 - Ago 2021",
+          description: [
+            "- Built modern and robust e-commerce apps using React, JQuery e Sass in VTEX Plataform;",
+            "- Assisted other developers with their codebase problems and development tools such as Webpack, NPM/YARN, Git through pair programmings;",
+            "- Developing campaign pages and deploy using Sales Force Cloud",
+          ],
+        },
+      ],
+    },
+    pt: {
+      title: "Últimas empresas",
+      jobs: [
+        {
+          title: "Desenvolvedor Full-Stack Sênior",
+          company: "DBC Company (atual)",
+          companyLink: "https://www.dbccompany.com.br/pt/homepage/",
+          companyLogo: "/assets/work/dbc-logo.png",
+          date: "Mar 2022 - Presente",
+          description: [
+            "- Desenvolvendo soluções do zero para e-commerces VTEX",
+            "- Desenvolvendo e implementando serviços de back-office utilizando Nodejs, Typescript, React e VTEX IO",
+            "- Implementando soluções de checkout utilizando Preact, Nodejs e Typescript",
+          ],
+        },
+        {
+          title: "Desenvolvedor Full-Stack",
+          company: "Corebiz",
+          companyLink: "https://www.corebiz.ag/",
+          companyLogo: "/assets/work/corebiz-logo.png",
+          date: "Ago 2021 - Mar 2022",
+          description: [
+            "- Desenvolvi soluções de pagamento utilizando React, Typescript e NodeJs na plataforma VTEX.",
+            "- Participei de integrações com serviços externos com o objetivo de criar cartões virtuais.",
+            "- Auxiliei desenvolvedores em sua rotina de desenvolvimento entregando soluções através de pair programming.",
+            "- Participei da implementação da fast-store VTEX no grupo Carrefour em seu front de mercado.",
+            "https://blog.corebiz.ag/quebrando-barreiras-do-checkout-vtex-com-reactjs/",
+          ],
+        },
+        {
+          title: "Desenvolvedor Front-End",
+          company: "Enext",
+          companyLink: "https://www.enext.com.br/",
+          companyLogo: "/assets/work/enext-logo.png",
+          date: "Mai 2021 - Ago 2021",
+          description: [
+            "- Construí aplicativos de e-commerce modernos e robustos usando React, JQuery e Sass na Plataforma VTEX;",
+            "- Auxiliei outros desenvolvedores com problemas em sua base de código e ferramentas de desenvolvimento como Webpack, NPM/YARN, Git através de pair programmings;",
+            "- Desenvolvendo páginas de campanha e deploy usando Sales Force Cloud, VTEX-IO",
+          ],
+        },
+      ],
     },
   },
 };
