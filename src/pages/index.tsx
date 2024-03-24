@@ -110,7 +110,7 @@ export default function Home() {
                 </a>
                 <div className="gap-2 flex flex-col">
                   <p className="text-xl font-bold">{job.company}</p>
-                  <div className="flex flex-col items-center md:flex-row md:gap-5 gap-2">
+                  <div className="flex flex-col md:items-center md:flex-row md:gap-5 gap-2">
                     <p className="text-lg">{job.title}</p>
                     <p className="text-sm">{job.date}</p>
                   </div>
