@@ -51,6 +51,11 @@ export default function Home() {
                   <img src="/assets/linkedin.svg" alt="Linkedin icon" />
                 </a>
               </div>
+              <div className="border-black border-2 p-2 rounded-full">
+                <a target="_blank" href="/Enzo_Spagnolli_CV.pdf">
+                  <img src="/assets/download.svg" alt="CV" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -182,6 +187,12 @@ export default function Home() {
                 href="https://www.linkedin.com/in/enzospagnolli/"
               >
                 <img src="/assets/linkedin.svg" alt="Linkedin icon" />
+              </a>
+            </div>
+
+            <div className="border-black border-2 p-2 rounded-full">
+              <a target="_blank" href="/Enzo_Spagnolli_CV.pdf">
+                <img src="/assets/download.svg" alt="CV" />
               </a>
             </div>
           </div>
