@@ -60,15 +60,7 @@ export default function Header() {
                 {message.services}
               </a>
             </li>
-            {/* <li>
-              <a
-                href="#projects"
-                onClick={() => setOpen(false)}
-                className="underline text-xl"
-              >
-                {message.projects}
-              </a>
-            </li> */}
+
             <li>
               <a
                 href="#work"
@@ -76,6 +68,15 @@ export default function Header() {
                 className="underline text-xl"
               >
                 {message.work}
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                onClick={() => setOpen(false)}
+                className="underline text-xl"
+              >
+                {message.projects}
               </a>
             </li>
             <li>
