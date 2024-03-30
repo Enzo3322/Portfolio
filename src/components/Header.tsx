@@ -13,9 +13,9 @@ export default function Header() {
   return (
     <header className="fixed top-0 w-screen bg-gray-100 z-50	">
       <nav
-        className={`max-w-[1180px]  p-5 m-auto flex justify-between items-center`}
+        className={`max-w-[1180px] p-5 m-auto relative flex justify-between items-center`}
       >
-        <div className="flex gap-5 md:w-28">
+        <div className="md:flex gap-5 md:w-28 hidden">
           <a target="_blank" href="https://github.com/Enzo3322">
             <img src="/assets/github-colored.svg" alt="Github icon" />
           </a>
@@ -24,14 +24,16 @@ export default function Header() {
           </a>
         </div>
         <div
-          className={`${open ? "absolute p-5 top-[44px] left-0 w-full" : ""}`}
+          className={`${
+            open
+              ? "absolute p-5 md:p-0 top-[64px] left-0 md:left-auto md:top-20 md:right-4 w-full md:w-auto"
+              : "hidden"
+          }`}
         >
           <ul
-            className={`md:flex gap-10 ${
-              open
-                ? " border rounded border-black p-5 flex items-center flex-col bg-gray-100 w-full"
-                : "hidden"
-            }`}
+            className={`
+            flex md:flex-row gap-10 border rounded border-black p-5 items-center flex-col bg-white 
+            ${!open && "hidden"}`}
           >
             <li>
               <Link
@@ -80,7 +82,7 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <div className="p-1 bg-white rounded md:hidden flex">
+              <div className="p-1 bg-white rounded flex">
                 <button
                   onClick={() => setCurrentLang("en")}
                   className={`w-14 rounded border-black ${
@@ -99,27 +101,29 @@ export default function Header() {
                 </button>
               </div>
             </li>
+            <li>
+              <div className="flex gap-5 md:w-28 md:hidden">
+                <a target="_blank" href="https://github.com/Enzo3322">
+                  <img src="/assets/github-colored.svg" alt="Github icon" />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/enzospagnolli/"
+                >
+                  <img
+                    src="/assets/linkedin-colored.svg"
+                    alt="Linkeding icon"
+                  />
+                </a>
+              </div>
+            </li>
           </ul>
         </div>
-
-        <div className="p-1 bg-white rounded md:flex hidden">
-          <button
-            onClick={() => setCurrentLang("en")}
-            className={`w-14 rounded border-black ${
-              lang === "en" && `border`
-            } `}
-          >
-            en
-          </button>
-          <button
-            onClick={() => setCurrentLang("pt")}
-            className={`w-14 rounded border-black ${lang === "pt" && `border`}`}
-          >
-            pt
-          </button>
+        <div>
+          <img src="/logo.svg" alt="Logo" className="w-28" />
         </div>
 
-        <button className="md:hidden" onClick={() => setOpen(!open)}>
+        <button className="" onClick={() => setOpen(!open)}>
           {open ? (
             <img src="/assets/close.svg" alt="Close menu" className="w-7 h-7" />
           ) : (
